@@ -6,6 +6,7 @@
     <title>Registration Form</title>
     <link href="style.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <section id="form" class="form">
@@ -87,6 +88,7 @@
                    
                 }
                 console.log('..if....');
+                swal("Thank You!", "Your details has been successfully submitted. Thanks!", "success");
             }
             else {
                 console.log('....else...........');
@@ -94,6 +96,8 @@
                 document.getElementById('pwdFormatError').style = "display:none";
                 
             }
+
+            
         }
     </script>
 </body>
